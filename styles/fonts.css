@@ -8,7 +8,7 @@
     @font-face {
     font-family: "PollerOne";
     src: url("../fonts/PollerOne-Regular.woff2") format('woff2');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
     }

@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="header"> 
+    <header class="header container"> 
         <img src="images/logo.png" alt="Логотип" width="300" height="250">
         <h1 class="header__title">Фитнес-клуб в Йошкар-Оле</h1>
-        <a class="header__button" href="login.html">Вход</a>
-        <a class="header__button" href="registration.html">Регистрация</a>
+        <button class="header__button button" type="button" href="login.html">Вход</button>
+        <button class="header__button button" type="button" href="registration.html">Регистрация</button>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item menu__item--active"><a href="index.html">Главная</a> </li>
@@ -25,11 +25,11 @@
             </ul>
         </nav>
     </header>
-    <main class="main"> 
+    <main class="main container"> 
         <section>
             <div class="services">
                 <h2 class="services__title">Виды тренировок</h2>
-                <a class="services__link" href="#" target="_blank">Все тренировки</a>
+                <button class="services__button button services__button--disable" tape="button" href="#" target="_blank">Все тренировки</button>
             </div>
             <ul class="workout">
                 <li class="workout__item">
@@ -48,7 +48,7 @@
                 </li>
                 <li class="workout__item">
                     <img src="images/group-training-2.jpg" alt="Групповые тренировки" width="300" height="200">
-                    <img src="images/group.jpg" alt="Групповые тренировки" width="200" height="300">
+                    <img src="images/group-training-1.jpg" alt="Групповые тренировки" width="300" height="200">
                     <h3 class="workout__title">Групповые тренировки</h3>
                     <p class="workout__card">Множество групповых занятий с оборудованием для всех возрастов и уровней подготовки</p>
                     <a href="#">Подробнее</a>
@@ -92,7 +92,7 @@
             <div class="first-lesson">
                 <h2 class="first-lesson__title">Первое занятие бесплатно</h2>
                 <p class="first-lesson__card">Мы понимаем, как сложно выбрать фитнес-клуб для тренировок. Именно поэтому предлагаем всем желающим абсолютно бесплатное первое занятие. Вы сможете ознакомиться с нашими залами, познакомиться с инструкторами и сделать правильный выбор.</p>
-                <a href="#">Получить бесплатное занятие</a>
+                <button class="first-lesson__button button" href="#">Получить бесплатное занятие</a>
             </div>
         </section>
         <section class="sing-up">
@@ -101,7 +101,7 @@
                <input type="text" name="name-surname" placeholder="Имя и фамилия" >
                <input type="tel" name="phone" placeholder="Номер телефона"> 
                <input type="email" name="mail" placeholder="Почта"> 
-               <button class="sing-up__button">Записаться</button>
+               <button class="sing-up__button button" type="button">Записаться</button>
             </form>
         </section>
      <section class="coaches">
@@ -150,7 +150,7 @@
                 <h2 class="entrance__title">Войти в профель</h2>
                 <input type="tel" name="phone" placeholder="Номер телефона" required>
                 <input type="password" name="password" placeholder="Пароль" required>
-                <button class="entrance__button">Войти</button>
+                <button class="entrance__button button" type="button">Войти</button>
             </form>
         </section>
         <section class="registration">
@@ -159,11 +159,11 @@
                 <input type="tel" name="phone" placeholder="Номер телефона" required>
                 <input type="text" name="fullname" placeholder="ФИО" required>
                 <input type="password" name="password" placeholder="Пароль" required>
-                <button class="registration__button">Зарегистрироваться</button>
+                <button class="registration__button button" type="button">Зарегистрироваться</button>
             </form>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
         <p class="footer__title">Сайт создан Андреевой Региной группа ФС-23</p>
         <ul class="footer">
             <li class="footer__link"><a href="#">Правовая оговорка</a></li>

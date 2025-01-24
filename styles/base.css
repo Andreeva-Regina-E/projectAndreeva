@@ -7,11 +7,11 @@
 html,
 body {
     font-family: 'Montserrat', 'Arial', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: #4a525a;
+    font-size: 25px;
+    line-height: 33px;
+    color: #02030a;
 
-    background-color: #fefefb;
+    background-color: #06f1dd3d;
 
     overflow-x: hidden;
 }
