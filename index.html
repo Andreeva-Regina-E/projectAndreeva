@@ -9,27 +9,47 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="header container"> 
-        <img src="images/logo.png" alt="Логотип" width="300" height="250">
-        <h1 class="header__title">Фитнес-клуб в Йошкар-Оле</h1>
-        <button class="header__button button" type="button">Вход</button>
-        <button class="header__button button" type="button">Регистрация</button>
+    <header class="header container">
+         <a class="header__logo-wrap" href="index.html"> 
+           <img class="header__logo" src="images/logo.png" alt="Логотип" width="300" height="250">
+           <h1 class="header__title">Фитнес-клуб в Йошкар-Оле</h1>
+        </a>
+        <div class="header__buttons">
+            <button class="header__button button" type="button">Вход</button>
+            <button class="header__button button" type="button">Регистрация</button>
+        </div>
         <nav class="header__menu">
             <ul class="menu">
-                <li class="menu__item menu__item--active"><a href="index.html">Главная</a> </li>
-                <li class="menu__item"><a class="menu__link" href="#">Каталог тренировок</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Тренеры</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Прайс</a></li>
-                <li class="menu__item"><a class="menu__link" href=#>Статьи, полезная информация</a></li>
-                <li class="menu__item"><a class="menu__link" href=#>Контакты</a></li>
+                <li class="menu__item menu__item--active">
+                    <a href="index.html">Главная</a> 
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Каталог тренировок</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Тренеры</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Прайс</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href=#>Статьи, полезная информация</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href=#>Контакты</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main class="main container"> 
         <section>
-            <div class="services">
+            <div class="services__wrap-left">
                 <h2 class="services__title">Виды тренировок</h2>
+                <p>Каждое занятие решает как отдельные задачи, так и комплекс проблем, среди которых снижение веса, укрепление сердечно-сосудистой системы, проработка мускулов, повышение подвижности суставов, развитие выносливости и общее улучшение здоровья.</p>
                 <button class="services__button button services__button--disable" type="button">Все тренировки</button>
+            </div>
+            <div class="services__wrap-right">
+                <img class="services__imge" src="images/lOG.png" alt="Основная картинка" width="750" height="175">
             </div>
             <ul class="workout">
                 <li class="workout__item">
