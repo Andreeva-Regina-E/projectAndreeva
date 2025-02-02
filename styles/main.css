@@ -29,6 +29,13 @@
     flex-direction: column;
 }
 
+.coaches{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    color: black;
+    gap: 10px;
+}
 .coaches__card{
     width: 350px;
     padding: 15px;
@@ -46,9 +53,25 @@
     text-align: center;
 }
 
+.coaches__job{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
 .coaches__desc{
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+.coaches__link{
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: darkorchid;
+    text-decoration: none;
+    text-align: center;
 }
 
 .coaches__list {
@@ -65,6 +88,10 @@
     flex-direction: column;
 }
 
+.coaches__link{
+    margin-top: auto;
+}
+
 .coaches__image{
     display: flex;
     width: 100%;
@@ -78,6 +105,7 @@
 
 .workout{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
