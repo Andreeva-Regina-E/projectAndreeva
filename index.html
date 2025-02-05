@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="RU">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,16 +19,16 @@
             <button class="header__button button" type="button">Вход</button>
             <button class="header__button button" type="button">Регистрация</button>
         </div>
-        <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item menu__item--active">
-                    <a href="index.html">Главная</a> 
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#promo" class="header__link header__item-link--active">Главная</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Каталог тренировок</a>
+                <li class="header__item">
+                    <a href="#card" class="header__item-link" href="#">Каталог тренировок</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Тренеры</a>
+                <li class="header__item">
+                    <a href="#recipe" class="header__item-link" href="#">Тренеры</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#">Прайс</a>
@@ -121,6 +122,15 @@
                     </div>
                 </li>
             </ul>
+        </section>
+
+        <section class="section search">
+            <h2 class="search__title section__title section__title--center">Поиск тренировок</h2>
+            <p class="search__description section__description--center">Введите название тренировки</p>
+            <form class="search__form form" action="/" method="get">
+                <input class="search__form--name form__field" type="search" name="text" placeholder="Название тренировки...">
+                <button class="search__form-submit button button--accent" type="submit">Поиск</button>
+            </form>
         </section>
         <section class="advantages">
             <div class="advantages">
