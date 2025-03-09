@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="RU">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,37 +13,37 @@
     <header class="header container">
          <a class="header__logo-wrap" href="index.html"> 
            <img class="header__logo" src="images/logo.png" alt="Логотип" width="300" height="250">
-           <h1 class="header__title">Фитнес-клуб в Йошкар-Оле</h1>
+           <h1 class="header__title">Фитнес-клуб "Энергия"</h1>
         </a>
         <div class="header__buttons">
             <button class="header__button button" type="button">Вход</button>
             <button class="header__button button" type="button">Регистрация</button>
         </div>
-        <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item menu__item--active">
-                    <a href="index.html">Главная</a> 
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#promo" class="header__link header__item-link--active">Главная</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Каталог тренировок</a>
+                <li class="header__item">
+                    <a href="#card" class="header__item-link" href="#">Каталог тренировок</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Тренеры</a>
+                <li class="header__item">
+                    <a href="#recipe" class="header__item-link" href="#">Тренеры</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Прайс</a>
+                <li class="header__item">
+                    <a class="header__link" href="#">Прайс</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href=#>Статьи, полезная информация</a>
+                <li class="header__item">
+                    <a class="header__link" href=#>Статьи, полезная информация</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href=#>Контакты</a>
+                <li class="header__item">
+                    <a class="header__link" href=#>Контакты</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main container"> 
-        <section>
+        <section class="services">
             <div class="services__wrap-left">
                 <h2 class="services__title">Виды тренировок</h2>
                 <p>Каждое занятие решает как отдельные задачи, так и комплекс проблем, среди которых снижение веса, укрепление сердечно-сосудистой системы, проработка мускулов, повышение подвижности суставов, развитие выносливости и общее улучшение здоровья.</p>
@@ -51,49 +52,85 @@
             <div class="services__wrap-right">
                 <img class="services__imge" src="images/lOG.png" alt="Основная картинка" width="750" height="175">
             </div>
+        </section>
+        <section>
             <ul class="workout">
                 <li class="workout__item">
-                    <img class="workout__image" src="images/gym.jpg" alt="Тренажёрный зал" width="300" height="200">
-                    <img class="workout__image" src="images/gym-1.jpg" alt="Тренажёрный зал" width="200" height="300">
-                    <h3 class="workout__title">Тренажёрный зал</h3>
-                    <p class="workout__card">Современный и хорошо оборудованный тренажерный зал, предлагающий широкий выбор тренажеров и оборудования для эффективных и разнообразных тренировок в Йошкар-Оле.</p>
-                    <a href="#">Подробнее</a>
+                    <div class="workout__image__wrap-right">
+                       <img class="workout__image" src="images/gym.jpg" alt="Тренажёрный зал" width="300" height="200">
+                       <img class="workout__image" src="images/gym-1.jpg" alt="Тренажёрный зал" width="200" height="300">
+                    </div>
+                    <div class="workout__wrap-left">
+                       <h3 class="workout__title">Тренажёрный зал</h3>
+                       <p class="workout__card">Современный и хорошо оборудованный тренажерный зал, предлагающий широкий выбор тренажеров и оборудования для эффективных и разнообразных тренировок в Йошкар-Оле.</p>
+                       <button class="workout__button button" type="button">Подробнее</button>
+                    </div>
                 </li>
                 <li class="workout__item">
-                    <img src="images/functional-are.jpg" alt="Функциональная зона" width="300" height="300">
-                    <img src="images/functional-are1.jpg" alt="Функциональная зона" width="200" height="250">
-                    <h3 class="workout__title">Функциональная зона</h3>
-                    <p class="workout__card">Широкий спектр оборудования для функциональных тренировок и разнообразных упражнений для всего тела.</p>
-                    <a href="#">Подробнее</a>
+                    <div>
+                        <img class="workout__image" src="images/functional-are.jpg" alt="Функциональная зона" width="300" height="300">
+                        <img class="workout__image" src="images/functional-are1.jpg" alt="Функциональная зона" width="200" height="250">
+                    </div>
+                    <div>
+                        <h3 class="workout__title">Функциональная зона</h3>
+                        <p class="workout__card">Широкий спектр оборудования для функциональных тренировок и разнообразных упражнений для всего тела.</p>
+                        <button class="workout__button button" type="button">Подробнее</button>
+                    </div>
                 </li>
                 <li class="workout__item">
-                    <img src="images/group-training-2.jpg" alt="Групповые тренировки" width="300" height="200">
-                    <img src="images/group-training-1.jpg" alt="Групповые тренировки" width="300" height="200">
-                    <h3 class="workout__title">Групповые тренировки</h3>
-                    <p class="workout__card">Множество групповых занятий с оборудованием для всех возрастов и уровней подготовки</p>
-                    <a href="#">Подробнее</a>
+                    <div>
+                        <img class="workout__image" src="images/group-training-2.jpg" alt="Групповые тренировки" width="300" height="200">
+                        <img class="workout__image" src="images/group-training-1.jpg" alt="Групповые тренировки" width="300" height="200">
+                    </div>
+                    <div>
+                        <h3 class="workout__title">Групповые тренировки</h3>
+                        <p class="workout__card">Множество групповых занятий с оборудованием для всех возрастов и уровней подготовки</p>
+                        <button class="workout__button button" type="button">Подробнее</button>
+                    </div>
                 </li>
                 <li class="workout__item">
-                    <img src="images/cardio-zone.jpg" alt="Кардиозона" width="300" height="300">
-                    <img src="images/cardio-zone1.jpg" alt="Кардиозона" width="300" height="200">
-                    <h3 class="workout__title">Кардиозона</h3>
-                    <p class="workout__card">В нашей кардио зоне вы найдете разнообразное оборудование, включая беговые дорожки, велотренажеры, подъемный тренажер, тренажер «гребля»</p>
-                    <a href="#">Подробнее</a>
+                    <div>
+                        <img class="workout__image" src="images/cardio-zone.jpg" alt="Кардиозона" width="300" height="300">
+                        <img class="workout__image" src="images/cardio-zone1.jpg" alt="Кардиозона" width="300" height="200">
+                    </div>
+                    <div>
+                        <h3 class="workout__title">Кардиозона</h3>
+                        <p class="workout__card">В нашей кардио зоне вы найдете разнообразное оборудование, включая беговые дорожки, велотренажеры, подъемный тренажер, тренажер «гребля»</p>
+                        <button class="workout__button button" type="button">Подробнее</button>
+                    </div>
                 </li>
                 <li class="workout__item">
-                    <img class="workout__image" src="images/childrens-room.jpg" alt="Детская комната" width="300" height="350">
-                    <img class="workout__image" src="images/childrens-room2.jpg" alt="Детская комната" width="300" height="300">
-                    <h3 class="workout__title">Детская комната</h3>
-                    <p class="workout__card">Уютная и безопасная детская комната, где ваши дети могут поиграть во время тренировки.</p>
-                    <a href="#">Подробнее</a>
+                    <div>
+                        <img class="workout__image" src="images/childrens-room.jpg" alt="Детская комната" width="300" height="350">
+                        <img class="workout__image" src="images/childrens-room2.jpg" alt="Детская комната" width="300" height="300">
+                    </div>
+                    <div>
+                        <h3 class="workout__title">Детская комната</h3>
+                        <p class="workout__card">Уютная и безопасная детская комната, где ваши дети могут поиграть во время тренировки.</p>
+                        <button class="workout__button button" type="button">Подробнее</button>
+                    </div>
                 </li>
                 <li class="workout__item">
-                    <img class="workout__image" src="images/sauna-1.jpg" alt="Сауна" width="200" height="300">
-                    <h3 class="workout__title">Хаммам и сауна</h3>
-                    <p class="workout__card">Хаммам предлагает традиционные паровые процедуры, которые помогут вам освободиться от напряжения, а сауна создаст атмосферу тепла и уюта после ваших тренировок</p>
-                    <a href="#">Подробнее</a>
+                    <div>
+                        <img class="workout__image" src="images/sauna-1.jpg" alt="Сауна" width="200" height="300">
+                        <img class="workout__image" src="images/sauna-2.jpg" alt="Сауна" width="300" height="200">
+                    </div>
+                    <div>
+                        <h3 class="workout__title">Хаммам и сауна</h3>
+                        <p class="workout__card">Хаммам предлагает традиционные паровые процедуры, которые помогут вам освободиться от напряжения, а сауна создаст атмосферу тепла и уюта после ваших тренировок</p>
+                        <button class="workout__button button" type="button">Подробнее</button>
+                    </div>
                 </li>
             </ul>
+        </section>
+
+        <section class="section search">
+            <h2 class="search__title section__title section__title--center">Поиск тренировок</h2>
+            <p class="search__description section__description--center">Введите название тренировки</p>
+            <form class="search__form form" action="/" method="get">
+                <input class="search__form--name form__field" type="search" name="text" placeholder="Название тренировки...">
+                <button class="search__form-submit button button--accent" type="submit">Поиск</button>
+            </form>
         </section>
         <section class="advantages">
             <div class="advantages">
@@ -136,21 +173,25 @@
                 <img class="coaches__image" src="images/Elena-Smirnova.jpg" alt="Фото тренера" width="200" height="300">
                 <p class="coaches__name">Елена Смирнова</p>
                 <p class="coaches__desc" >Тренер по растяжке</p>
+                <button class="coaches__button button" type="button">Записаться</button>
             </div>
             <div class="coaches__card">
                 <img class="coaches__image"  src="images/Alexander-Ivanov.jpg" alt="Фото тренера" width="300" height="200">
                 <p class="coaches__name">Александр Иванов</p>
                 <p class="coaches__desc">Тренер-универсал</p>
+                <button class="coaches__button button" type="button">Записаться</button>
             </div>
             <div class="coaches__card">
                 <img class="coaches__image" src="images/Herman-Shmatkov.jpg" alt="Фото тренера" width="200" height="300">
                 <p class="coaches__name">Герман Шматков</p>
                 <p class="coaches__desc">Тренер-универсал</p>
+                <button class="coaches__button button" type="button">Записаться</button>
              </div>
              <div class="coaches__card">
                 <img class="coaches__image" src="images/Julia-Petrova.jpg" alt="Фото тренера" width="200" height="300">
                 <p class="coaches__name">Юлия Петрова</p>
                 <p class="coaches__desc">Тренер групповых занятий</p>
+                <button class="coaches__button button" type="button">Записаться</button>
              </div>
         </div>
      </section>
@@ -158,29 +199,51 @@
         <div class="reviews">
                 <h2 class="reviews__title">Оценки,отзывы</h2>
                 <img class="reviews__image" src="images/reviews.jpg" alt="Отзывы" width="200" height="300">
-            </div>
-        </section>
-        <section class="articles">
-            <div class="articles">
+        </div>
+    </section>
+    <section class="articles">
+        <div class="articles">
                 <h2 class="articles__title">Интересные и полезные статьи</h2>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container container">
+            <a class="footer__logo logo">Fitness</a>
+            <p class="footer__copy">&copy; Fitness 2025</p>
+        </div>
+    </footer>
+    <div style="display: none" class="dialog dialog--layout">
+        <section class="popup">
+            <button class="popup__close" type="button"><img src="images/" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title">Войдите в профиль</h2>
+            <p class="popup__desc">Добавлять могут только зарегистрированные пользователи.</p>
+            <div class="popup__buttons">
+                <button class="button button--accent" type="button">Войти</button>
+                <button class="button" type="button">Регистрация</button>
             </div>
         </section>
-        <section class="entrance">
-            <form action="/">
-                <h2 class="entrance__title">Войти в профель</h2>
-                <input type="tel" name="phone" placeholder="Номер телефона" required>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <button class="entrance__button button" type="button">Войти</button>
-            </form>
-        </section>
-        <section class="registration">
-            <form action="/">
-                <h2 class="registration__title">Регистрация</h2>
-                <input type="tel" name="phone" placeholder="Номер телефона" required>
-                <input type="text" name="fullname" placeholder="ФИО" required>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <button class="registration__button button" type="button">Зарегистрироваться</button>
-            </form>
+        <section style="display: none" class="popup">
+                <button class="popup__close" type="button"><img src="images/" alt="Закрыть окно" width="24"
+                        height="24"></button>
+                <h2 class="popup__title popup__title--registration">Регистрация</h2>
+                <form class="popup__form form" action="/" method="post">
+                    <input class="form__field" type="text" name="name" placeholder="Имя" required>
+                    <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                    <fieldset class="form__fieldset">
+                        <div class="form__field-block">
+                            <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                            <span class="form__field-alert">Минимум 8 символов</span>
+                        </div>
+                        <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
+                            required>
+                    </fieldset>
+                    <fieldset class="form__buttons">
+                        <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                        <button class="button" type="button">Отмена</button>
+                    </fieldset>
+                    <button class="button button--link" type="button">У меня уже есть аккаунт</button>
+                </form>
         </section>
     </main>
     <footer class="footer container">
@@ -193,3 +256,4 @@
     </footer>
 </body>
 </html>
+
