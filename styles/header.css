@@ -5,7 +5,7 @@
     color: #f15d08fb
 }
 
-.menu{
+.header__list{
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 
-.menu__link{
+.header__link{
     display: block;
     padding: 10px;
     margin: 5px;

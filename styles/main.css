@@ -179,6 +179,10 @@
     object-fit: cover;
 }
 
+.workout__item{
+    width: 350px;
+}
+
 .workout__title{
     width: 100%;
 }
