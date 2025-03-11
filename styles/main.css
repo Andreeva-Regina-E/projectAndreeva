@@ -186,3 +186,27 @@
 .workout__title{
     width: 100%;
 }
+
+.coaches__card{
+    width: 360px;
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.coaches__image{
+    min-width: 360px;
+}
+
+.coaches__item{
+    width: 360px;
+    transition: 0.3s ease;
+}
+
+.coaches__link{
+    border: none;
+    margin-top: 20px;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+}
