@@ -91,6 +91,113 @@ closeModalButton.addEventListener("click", () => {
 });
 
 
+//Объявляем переменную cardsPrice и сохраняем в нее элемент с классом price
+const cardsPrice = document.querySelector('.price');
+
+// Если такой элемент существует
+if (cardsPrice) {
+//Объявляем переменную priceList и сохраняем в нее элемент с классом price__list, чтобы мы могли добавить новые элементы
+        const priceList = cardsPrice.querySelector('.price__list');
+
+//Создаем объект cardsPriceData, которая содержит данные для трех карточки.
+        const cardsPriceData = {
+// каждая ссылка содержит level (название тарифа), price (цена), description (описание тарифа), button (кнопку для оформления заявки).
+            price1: {
+                level: '– PRO –',
+                price: '8 900 ₽',
+                description: '4 месяца',
+                button: 'Оставить заявку'
+            },
+            price2: {
+                level: '– POBO –',
+                price: '11 900 ₽',
+                description: '6 месяцев',
+                button: 'Оставить заявку'
+            },
+            price3: {
+                level: '– PROG –',
+                price: '2 850 ₽',
+                description: '1 месяц',
+                button: 'Оставить заявку'
+            }
+        }
+
+//Создаем функцию createCard, которая будет добавлять карточку. Внутри функции 4 переменные: level (название тарифа), price (цена), description (описание тарифа), button (кнопку для оформления заявки)
+        const createCard = (level, price, description, button) => {
+// Создаем переменную  card, которая будет содержать HTML-код карточки и вставляем туда 4 переменные
+            const card = `
+            <li class="price__item">
+                <p class="price__level">${level}</p>
+                <p class="price__price">${price}</p>
+                <p class="price__description">${description}</p>
+                <button class="price__button button">${button}</button>
+            </li>
+        `;
+//  Возвращаем значение переменной card
+            return card;
+        }
+// Создаем цикл for и проходим по всем элементам объекта cardsPriceData.
+        for (const cardKey in cardsPriceData) {
+//Получаем данные одной карточки из объекта cardsPriceData 
+            const card = cardsPriceData[cardKey];
+//создаем переменную cardElement и вызываем функцию createLink, куда передаем тариф, цену, описание и кнопку (то, из чего будет состоять ваша карточка).
+            const cardElement = createCard(card.level, card.price, card.description, card.button);
+// с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка priceList.
+            priceList.insertAdjacentHTML('beforeend', cardElement);
+        }
+}
 
 
+//Объявляем переменную headerMenu и сохраняем в нее header__menu
+const headerMenu = document.querySelector('.header__menu');
+// Если такой элемент существует
+if (headerMenu){
+//Объявляем переменную headerList и сохраняем в нее header__list, чтобы мы могли добавить новые элементы
+        const headerList = headerMenu.querySelector('.header__list');
+
+//Создаем объект menuData, который содержит данные для трех ссылок меню.
+        const menuData = {
+// Каждая ссылка содержит link (адрес ссылки; если ссылка никуда не ведет, то можно оставить #) и title (текст ссылки).
+            link1: {
+                link: '#',
+                title: 'Главная',
+            },
+            link2: {
+                link: '#',
+                title: 'Каталог тренировок',
+            },
+            link3: {
+                link: '#',
+                title: 'Тренеры',
+            },
+            link3: {
+                link: '#',
+                title: 'Прайс',
+            },
+            link3: {
+                link: '#',
+                title: 'Контакты',
+            }
+        }
+
+//Создаем функцию createLink, которая будет добавлять ссылку в меню. Внутри функции 2 переменные: UrlLink – адрес, а title — текст ссылки.
+        const createLink = (UrlLink, title) =>{
+// создаем переменную  link, которая будет содержать HTML-код ссылки и вставляем в него 2 переменные
+            const link = `
+            <li class="header__item"><a href="${UrlLink}" class="header__link">${title}</a></li>
+            `;
+            return link;
+        }
+
+// Создаем цикл for и проходим по всем элементам объекта menuData.
+        for (const linkItem in menuData) {
+//Получаем данные для ссылки и сохраняем в переменную link.
+            const link = menuData[linkItem];
+//Создаем переменную linkIndex и вызываем функцию createLink, куда передаем адрес и заголовок.
+            const linkIndex = createLink(link.UrlLink, link.title);
+// С помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка headerList.
+            headerList.insertAdjacentHTML('beforeend', linkIndex);
+
+        }
+}
 
