@@ -37,3 +37,60 @@ document.addEventListener('scroll', () => {         // навешиваем сл
     }
 
 });
+
+
+const CoachesContainer = document.querySelector(".coaches");
+
+if (CoachesContainer){
+    const dataTitleCoaches = [
+        "Ксения Ишуткина",
+        "Елена Смирнова",
+        "Александр Иванов",
+        "Герман Шматков",
+        "Юлия Петрова",
+    ];
+
+    const titleCoaches =
+        coachesContainer.querySelectorAll(".coaches__subtitle");
+
+        titleCoaches.forEach((item, index) => {
+        item.textContent = dataTitleTreners[index];
+       });
+ }
+
+//Объявляем переменную welcоmeButtonModal и сохраняем в нее кнопку c классом welcome__button
+const freelessonButtonModal = document.querySelector(".free-lesson__button");
+//объявляем переменную modalApplication и сохраняем в нее модальное окно, которое хотим увидеть
+const modalApplication = document.querySelector(".applications");
+
+//Если есть такая кнопка и модальное окно
+if (freelessonButtonModal && modalApplication) {
+//Для кнопки «Записаться на курс» добавляем обработчик события клика по этой кнопке:
+    freelessonsButtonModal.addEventListener("click", () => {
+// удаляем атрибут hidden у модального окна modalApplication и модальное окно становится видимым
+      modalApplication.removeAttribute("hidden");
+    });
+}
+
+// добавляем обработчик события при клике вне области формы. Тогда каждый раз, когда пользователь кликает где-либо на фоне вокруг появившейся формы, будет вызываться функция,
+window.addEventListener("click", (event) => {
+// проверяем, был ли клик на фоне модального окна
+    if (event.target === modalApplication) {
+//если условие выполняется, добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
+        modalApplication.setAttribute("hidden", true);
+    }
+});
+
+//Объявляем переменную closeModalButton и сохраняем в нее кнопку c классом application__button
+const closeModalButton = document.querySelector(".application__close");
+
+//Для кнопки «Закрыть» добавляем обработчик события клика по этой кнопке:
+closeModalButton.addEventListener("click", () => {
+// Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
+    modalApplication.setAttribute("hidden", true);
+});
+
+
+
+
+

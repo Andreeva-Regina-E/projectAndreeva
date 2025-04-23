@@ -152,48 +152,71 @@
                 <button class="first-lesson__button button">Получить бесплатное занятие</button>
             </div>
         </section>
-        <section class="sing-up">
-            <form action="/">
-                <h2 class="sing-up__title">Записаться на бесплатное занятие</h2>
-               <input type="text" name="name-surname" placeholder="Имя и фамилия" >
-               <input type="tel" name="phone" placeholder="Номер телефона"> 
-               <input type="email" name="mail" placeholder="Почта"> 
-               <button class="sing-up__button button" type="button">Записаться</button>
-            </form>
+        <section class="free-lesson">
+            <div class="free-lesson__block">
+                <h1 class="free-lesson__title">FITNESS CLUB</h1>
+                <p class="free-lesson__text">Занятия для различных мышечных групп
+                </p>
+                <button class="free-lesson__button button">Записаться на бесплатное занятие</button>
+            </div>
+            <img class="free-lesson__img" src="images/free-lesson.png" alt="Девушка с гантелями" class="free-lesson__img" width="783" height="917">
         </section>
-     <section class="coaches">
-        <div class="coaches">
-            <h2 class="coaches__title section__title">Тренеры</h2>
-            <div class="coaches__card">
-                <img class="coaches__image" src="images/Xenia-Ishutkina.jpg" alt="Фото тренера" width="200" height="300">
-                <p class="coaches__name">Ксения Ишуткина</p>
-                <p class="coaches__desc">Администратор</p>
-            </div>
-            <div class="coaches__card">
-                <img class="coaches__image" src="images/Elena-Smirnova.jpg" alt="Фото тренера" width="200" height="300">
-                <p class="coaches__name">Елена Смирнова</p>
-                <p class="coaches__desc" >Тренер по растяжке</p>
-                <button class="coaches__button button" type="button">Записаться</button>
-            </div>
-            <div class="coaches__card">
-                <img class="coaches__image"  src="images/Alexander-Ivanov.jpg" alt="Фото тренера" width="300" height="200">
-                <p class="coaches__name">Александр Иванов</p>
-                <p class="coaches__desc">Тренер-универсал</p>
-                <button class="coaches__button button" type="button">Записаться</button>
-            </div>
-            <div class="coaches__card">
-                <img class="coaches__image" src="images/Herman-Shmatkov.jpg" alt="Фото тренера" width="200" height="300">
-                <p class="coaches__name">Герман Шматков</p>
-                <p class="coaches__desc">Тренер-универсал</p>
-                <button class="coaches__button button" type="button">Записаться</button>
-             </div>
-             <div class="coaches__card">
-                <img class="coaches__image" src="images/Julia-Petrova.jpg" alt="Фото тренера" width="200" height="300">
-                <p class="coaches__name">Юлия Петрова</p>
-                <p class="coaches__desc">Тренер групповых занятий</p>
-                <button class="coaches__button button" type="button">Записаться</button>
-             </div>
+        <div class="applications" hidden>
+            <section class="applications">
+                <div class="application__wrap"> 
+                    <h3 class="application__title">
+                        Записаться на бесплатное занятие
+                    </h3>
+                    <p class="application__text">Предложение действует 10 дней после записи</p>
+                </div>
+                <button class="application__close" type="button">Закрыть</button>
+                <form action="/"class="application__form">
+                    <input class="application__input" type="text" placeholder="Имя">
+                    <input class="application__input" type="tel" placeholder="Телефон">
+                    <input class="application__input" type="email" placeholder="E-mail">
+                    <button class="application__button">Отправить заявку</button>
+                </form>
+            </section>
         </div>
+
+     <section class="coaches">
+        <h2 class="coaches__title section__title">Профессиональные тренеры</h2>
+        <ul class="coaches__card">
+            <li class="coaches__item">
+                <img src="images/Xenia-Ishutkina.jpg" alt="Тренер Ишуткина" class="coaches__img" width="200">
+                <h3 class="coaches__subtitle">Тренер 1</h3>
+                <p class="coaches__test">Администратор</p>
+                <button class="coaches__link" type="button">Подробнее</button>
+            </li>
+            <li class="coaches__item">
+                <img src="images/Elena-Smirnova.jpg" alt="Тренер Смирнова" class="coaches__image" width="200">
+                <p class="coaches__subtitle">Тренер 2</p>
+                <p class="coaches__test" >Тренер по растяжке</p>
+                <button class="coaches__button button" type="button">Записаться</button>
+                <button class="coaches__link" type="button">Подробнее</button>
+            </li>
+            <li class="coaches__item">
+                <img class="coaches__image"  src="images/Alexander-Ivanov.jpg" alt="Тренер Иванов" class="coaches__image" width="300" height="200">
+                <p class="coaches__subtitle">Тренер 3</p>
+                <p class="coaches__test">Тренер-универсал</p>
+                <button class="coaches__button button" type="button">Записаться</button>
+                <button class="coaches__link" type="button">Подробнее</button>
+            </li>
+            <li class="coaches__item">
+                <img class="coaches__image" src="images/Herman-Shmatkov.jpg" alt="Тренер Шматков" class="coaches__image" width="200" height="300">
+                <p class="coaches__subtitle">Тренер 4</p>
+                <p class="coaches__test">Тренер-универсал</p>
+                <button class="coaches__button button" type="button">Записаться</button>
+                <button class="coaches__link" type="button">Подробнее</button>
+            </li>
+             <li class="coaches__item">
+                <img class="coaches__image" src="images/Julia-Petrova.jpg" alt="Тренер Петрова" class="coaches__image" width="200" height="300">
+                <p class="coaches__subtitle">Тренер 5</p>
+                <p class="coaches__test">Тренер групповых занятий</p>
+                <button class="coaches__button button" type="button">Записаться</button>
+                <button class="coaches__link" type="button">Подробнее</button>
+             </li>
+        </ul>
      </section>
      <section class="reviews">
         <div class="reviews">
