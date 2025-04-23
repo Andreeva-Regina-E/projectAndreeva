@@ -308,3 +308,56 @@
     background-color: #fdec00; /*фон кнопки*/
 }
 
+.price__list {
+    margin-top: 60px; /*отступ сверху*/
+    display: flex; /*Используем flexbox для выравнивания в строку*/
+    column-gap: 40px; /*промежуток между карточками*/
+}
+
+.price__item {
+    padding: 40px 0; /*Внутренние отступы: 40px сверху и снизу, 0px слева и справа */
+    display: flex; /*Используем flexbox для выравнивания в столбец*/
+    flex-direction: column;/* выстраиваем в колонку*/
+    justify-content: space-between; /* распределяем элементы по ширине*/ 
+    align-items: center; /* выравнивание по вертикали */
+    border: 1px solid rgba(20, 16, 36, 0.2); /*задаем толщину границы и цвет*/
+    border-radius: 20px;/* скругляем границы*/
+    text-align: center; /*выравнивание текста по центру*/
+    width: 360px; /*ширина карточки*/
+    height: 500px; /*высота карточки*/
+    transition: transform 0.3s ease-out; /*плавное изменение свойства в течение 0.3 секунды*/
+}
+
+.price__level {
+    font-weight: 600; /*толщина шрифта */
+    font-size: 30px; /*размер текста тарифа*/
+}
+
+.price__price {
+    margin-top: 83px; /*отступ сверху*/
+    font-weight: 600; /*толщина шрифта */
+    font-size: 50px; /*размер текста цены*/
+}
+
+.header {
+    background: #141024; /*цвет фона шапки*/
+    padding: 30px 100px; /* Внутренние отступы: 30px сверху и снизу, 100px слева и справа */
+    color: #fff; /*цвет текста*/
+    display: flex; /*Используем flexbox для выравнивания в строку*/
+    justify-content: space-between; /* распределяем элементы по ширине*/ 
+    align-items: center; /* выравнивание по вертикали */
+}
+
+.header__list {
+    display: flex; ;/*Используем flexbox для выравнивания списка в строку*/
+    justify-content: space-between; /* распределяем элементы по ширине*/ 
+    gap: 40px; /*промежуток между ссылками */
+}
+
+.header__link {
+    font-size: 20px; /*размер текста ссылок*/
+    font-weight: 400; /*толщина шрифта */
+    text-decoration: none; /*убираем подчеркивание ссылок*/
+    color: #fff; /*цвет текста*/
+}
+
