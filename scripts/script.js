@@ -300,3 +300,9 @@ if (preloader && content) {
     }, 3000); // Задержка 3 секунды
 }
 
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
