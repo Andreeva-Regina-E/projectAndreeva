@@ -21,7 +21,7 @@ LOGImg.addEventListener('mouseenter', () => {
 });
 
 
-
+const header = document.querySelector('.header');       // создаем переменную находя блок по классу
 const heightHeader = header.offsetHeight;           // определяем высоту блока, включая внутренние отступы
 
 document.addEventListener('scroll', () => {         // навешиваем слушатель событий на scroll страницы и ожидаем ее прокрутку
@@ -51,10 +51,10 @@ if (CoachesContainer){
     ];
 
     const titleCoaches =
-        coachesContainer.querySelectorAll(".coaches__subtitle");
+        CoachesContainer.querySelectorAll(".coaches__subtitle");
 
         titleCoaches.forEach((item, index) => {
-        item.textContent = dataTitleTreners[index];
+        item.textContent = dataTitleCoaches[index];
        });
  }
 

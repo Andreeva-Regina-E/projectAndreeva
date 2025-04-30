@@ -39,10 +39,11 @@
 .coaches__card{
     width: 350px;
     padding: 15px;
-
+    display: flex;
     background-color: aliceblue;
     color: black;
     box-shadow: 1px 2px 20px 5px #d7d7d7;
+    list-style-type: none;
 }
 
 .coaches__name{
@@ -81,11 +82,6 @@
     gap: 20px;
     flex-wrap: wrap;
     list-style-type: none;
-}
-
-.coaches__card{
-    display: flex;
-    flex-direction: column;
 }
 
 .coaches__link{
