@@ -66,7 +66,7 @@ const modalApplication = document.querySelector(".applications");
 //Если есть такая кнопка и модальное окно
 if (freelessonButtonModal && modalApplication) {
 //Для кнопки «Записаться на курс» добавляем обработчик события клика по этой кнопке:
-    freelessonsButtonModal.addEventListener("click", () => {
+    freelessonButtonModal.addEventListener("click", () => {
 // удаляем атрибут hidden у модального окна modalApplication и модальное окно становится видимым
       modalApplication.removeAttribute("hidden");
     });
@@ -300,9 +300,50 @@ if (preloader && content) {
     }, 3000); // Задержка 3 секунды
 }
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new swiper(".mySwiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
+
+  //ИСПОЛЬЗОВАНИЕ LOCALSTORAGE задание 3.7
+// Объявляем переменную formApplication и помещаем в нее элемент с id "formApplication"
+const formApplication = document.querySelector("#formApplication"); 
+// Проверяем, существует ли элемент formApplication
+if (formApplication) {  
+// Добавляем обработчик события для отправки формы
+   formApplication.addEventListener("submit", (event) => {
+     event.preventDefault(); // Предотвращаем отправку формы
+    // Объявляем переменные "username", "tel","email",   и помещаем в нее элементы с id из формы
+     const username = formApplication.querySelector("#username").value;
+     const tel = formApplication.querySelector("#tel").value;
+     const email = formApplication.querySelector("#email").value;
+
+     // Объявляем переменную modalMessage и помещаем в нее элемент для отображения сообщений о статусе заявки
+const modalMessage = modalApplicationApplication.querySelector("#application-message");
+    
+      // Проверка длины имени пользователя
+      if (username.length < 3) {
+         modalMessage.textContent = "Имя пользователя должно содержать не менее 3 символов";
+         modalMessage.style.color = "black"; // Устанавливаем цвет сообщения об ошибке
+         return;
+      }
+    
+       // Проверка номера телефона
+      if (!/^\d{10,}$/.test(tel)) {
+          modalMessage.textContent = "Номер телефона должен содержать только цифры и быть не менее 10 символов";
+          modalMessage.style.color = "black"; // Устанавливаем цвет сообщения
+          return;
+      }
+    
+      // Здесь можно добавить отправку данных на сервер
+      modalMessage.textContent = "Заявка отправлена!";
+      modalMessage.style.color = "green"; // Устанавливаем цвет сообщения для успешной отправки
+    
+      // Записываем данные в localStorage
+      window.localStorage.setItem("username", username);
+      window.localStorage.setItem("tel", tel);
+      window.localStorage.setItem("email", email);
+});
+}
