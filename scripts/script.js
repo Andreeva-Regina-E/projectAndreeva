@@ -148,6 +148,40 @@ if (cardsPrice) {
 }
 
 
+//Объявляем переменную buttonsи сохраняем в нее все кнопки для фильтрации с классом .price__btn
+const buttons= document.querySelectorAll(".price__btn");
+//Объявляем переменную cardsFilterи сохраняем в нее все карточки с курсами с классом .price__item
+  const cardsFilter= document.querySelectorAll(".price__item");
+// Проходим по каждой кнопке фильтрации
+  buttons.forEach((button) => {
+//добавляем обработчик события клика по кнопке фильтрации:
+    button.addEventListener("click", () => {
+// Получаем значение атрибута data-filter нажатой кнопки
+      const filter = button.getAttribute("data-filter"); // Получаем значение data-filter
+// Проходим по каждой карточке курса
+      cardsFilter.forEach((card) => {
+                // Если кнопка "все", показываем все карточки
+                if (filter === "all") {
+// Убираем класс hidden
+                    card.classList.remove("hidden");
+                } else {
+                    // Проверяем, содержит ли карточка нужный класс
+                    if (card.classList.contains(filter)) {
+// Убираем класс hidden, если карточка соответствует фильтру
+            card.classList.remove("hidden");
+                    } else {
+// Добавляем класс hidden, если карточка не соответствует фильтру
+            card.classList.add("hidden");
+                    }
+                }
+            });
+        });
+    });
+
+
+
+
+
 //Объявляем переменную headerMenu и сохраняем в нее header__menu
 const headerMenu = document.querySelector('.header__menu');
 // Если такой элемент существует
@@ -307,6 +341,27 @@ var swiper = new swiper(".mySwiper", {
     },
   });
 
+// объявляем переменную sliders,куда помещаем элемент с классом swiper
+const sliders = document.querySelector('.swiper');
+//проверяем существует ли элемент
+    if (sliders) {
+        const swiper1 = new Swiper(sliders, {
+            // Пагинация
+            pagination: {
+                el: '.swiper-pagination',
+                type: "fraction",
+            },
+
+            // Навигационные стрелки
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+
+
+
   //ИСПОЛЬЗОВАНИЕ LOCALSTORAGE задание 3.7
 // Объявляем переменную formApplication и помещаем в нее элемент с id "formApplication"
 const formApplication = document.querySelector("#formApplication"); 
@@ -347,3 +402,64 @@ const modalMessage = modalApplicationApplication.querySelector("#application-mes
       window.localStorage.setItem("email", email);
 });
 }
+
+
+// ЗАДАНИЕ 3.6.ЧАСТЬ 2    Объявляем переменную cardsCon и сохраняем в нее элементы секции job
+const cardsCon = document.querySelector(".job");
+//  проверяем существует ли элемент cardsContainer, если он существует то переходим далее
+    if (cardsContainer) {
+//Объявляем переменную cardList и сохраняем в нее список с классом 
+        const cardList = cardsCon.querySelector(".job__list");
+        // Пример URL для получения данных с сервера (откуда загружаются данные)
+        const apiUrl = "data.json";
+        // Функция для создания карточки
+ // объявляем функцию, принимает 3 параметра imageUrl, imageAlt, imageWidth, iconHeight, title,description
+        const createCard = (
+            imageUrl,
+            iconAlt,
+            iconWidth,
+            iconHeight,
+            title,
+            description
+        ) => {
+            // Шаблонные строки и подстановки
+ // создается переменная card, которая содержит HTML-код для карточки изображения. Внутри <li> (элемента списка) создаются три элемента <img>(изображение), <h3>  (заголовок с названием вакансии), <p> (описание вакансии):
+            const card = `
+                <li class="job__item" href="#">
+                      <img class="job__img" src="${imageUrl}" alt="${iconAlt}" width="${iconWidth}" height="${iconHeight}">
+                    <h3 class="job__title">${title}</h3>
+                    <p class="job__description">${description}</p>
+                </li>
+            `;
+ //возвращает строку card, которая содержит HTML-код для карточки изображения
+            return card;
+
+        };
+// Запрос к серверу с помощью метода fetch
+ fetch(apiUrl)
+ // После того как запрос выполнен, возвращается объект Response, где вызывается метод json(), который преобразует ответ в формат JSON
+ .then((response) => response.json())
+ //получение данных 
+ .then((data) => {
+       console.log(data); // Вывод данных в консоль
+       console.log(typeof data); // Вывод в консоль Типа полученных данных
+  
+       images.forEach((item) => {
+ // создается переменная cardElement, где для каждого элемента массива вызывается функция createCard и передаются параметры
+            const cardElement = createCard(
+                item.image,
+                item.iconAlt,
+                item.iconWidth,
+                item.iconHeight,
+                item.title,
+                item.description
+            );
+ // Добавление карточки на страницу в список cardListImages  с помощью метода insertAdjacentHTML beforeend указывает, что карточка должна быть добавлена в конец списка
+            cardList.insertAdjacentHTML("beforeend", cardElement);
+       });
+ })
+      //в консоли выводится ошибка если у вас файл не загружается
+             .catch((error) => {
+                 console.error("Ошибка при загрузке данных:", error);
+             });
+ }

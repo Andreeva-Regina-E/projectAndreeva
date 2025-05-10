@@ -1,26 +1,26 @@
 [
     {
-        "imageUrl": [
-            "img/hall-1.jpg",
-            "img/hall-2.jpg"
-        ],
-        "imageAlt": "Зал",
-        "imageWidth": 500
+      "imgUrl": [
+        "img/hall-1.jpg",
+        "img/hall-2.jpg"
+      ],
+      "imgAlt": "Зал",
+      "imgWidth": 500
     },
     {
-        "imageUrl": [
-            "img/hall-3.jpg",
-            "img/hall-4.jpg"
-        ],
-        "imageAlt": "Зал",
-        "imageWidth": 500
+      "imgUrl": [
+        "img/hall-3.jpg",
+        "img/hall-4.jpg"
+      ],
+      "imgAlt": "Зал",
+      "imgWidth": 500
     },
     {
-        "imageUrl": [
-            "img/hall.jpg",
-            "img/sauna.jpg"
-        ],
-        "imageAlt": "Зал",
-        "imageWidth": 500
+      "imgUrl": [
+        "img/hall.jpg",
+        "img/sauna.jpg"
+      ],
+      "imgAlt": "Зал",
+      "imgWidth": 500
     }
 ]

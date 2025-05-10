@@ -374,3 +374,84 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);/*тень карточки*/
 }
 
+.hidden {
+    display: none; /* Скрываем элементы с этим классом */
+}
+.price__list {
+  display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+  gap: 40px; /* промежуток между карточками */
+  flex-wrap: wrap; /*Если карточки не влезут в строку, то перенос на новую*/
+}
+.price__item {
+  padding: 40px0; /* Отступы сверху и снизу 40px, слева и справа 0 */
+  display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+  flex-direction: column; /* Элементы внутри карточки располагаем в колонку */
+  justify-content: space-between;
+  align-items: center; /* Центрируемэлементыпогоризонтали */
+  border: 1pxsolidrgba(20, 16, 36, 0.2); /* задаем рамку с толщиной 1рх и цветом с прозрачностью */
+  border-radius: 20px; /* скруглениеугловна 20px*/
+  text-align: center; /* Центрируемтекст */
+  width: 360px; /* Ширина карточки */
+  height: 400px; /* Высота карточки */
+  transition: transform0.3sease-out; /* Плавный переход приувеличении карточки */
+}
+.price__item:hover {
+  background: #141024; /* Цвет фона при наведении */
+  color: #fff; /* Цвет текста при наведении */
+  transform: scale(1.1); /* Увеличение карточки при наведении */
+}
+.price__level {
+    font-weight: 600; /*толщинашрифта */
+    font-size: 30px; /* Размершрифта */
+}
+
+.price__description {
+    margin-top: 20px;
+}
+.price__button {
+  max-width: 280px; /* Максимальная ширина кнопки «Оставить заявку */
+  height: 79px; /* Высотакнопки */
+}
+.price__buttons {
+    padding-top: 20px; /* Отступсверху */
+    display: flex; /* Используем flex для выравнивания кнопок */
+  gap: 30px; /* Промежуток между кнопками */
+  justify-content: center; /* Центрируем кнопки по горизонтали */
+}
+.price__btn {
+  background-color: #f7f7f7; /* Цветфонакнопокфильтрации */
+  border-radius: 10px; /* Скруглениеугловкнопокфильтрации*/
+  height: 40px; /* Высотакнопок */
+  border: none; /* Убираемрамку */
+}
+.price__btn:hover,
+.price__btn:focus,
+.price__btn:active {
+  background-color: #141024; /* Цветфонапринаведении, фокусеиактивации */
+    color: #f7f7f7; /* Цвет текста при наведении, фокусе и активации */
+}
+
+.job__list {
+    margin-top: 30px; /*ставим в 30 пикселей отступ cверху*/
+    display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+    gap: 30px;  /*  промежуток в 30 px между элементами списка*/
+    justify-content: space-evenly; /* Распредение элементов списка равномерно по горизонтали*/
+}
+
+ 
+.job__item {
+    height: 300px; /*высота карточки*/
+    display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+    flex-direction: column;  /* располагаем карточку в колонку*/
+    justify-content: space-between; /*распределение карточек по вертикали,по всей высоте*/
+    align-items: center; /*Центрируем элементы по горизонтали внутри карточки*/
+    text-align: center; /*выравнивание текста по центру*/
+}
+
+ 
+.job__img {
+    object-fit: contain; /*изображение вписывается в контейнер, сохраняя при этом его пропорции*/
+    height: 200px; /*высота изображения*/
+}
+
+

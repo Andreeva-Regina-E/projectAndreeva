@@ -1,38 +1,18 @@
 [
    {
-        "link": "/simple-dish-menu/",
-        "icon": "images/icon/menu.svg",
-        "iconAlt": "Иконка для простых блюд",
-        "iconWidth": 22,
-        "iconHeight": 24,
-        "title": "Простые блюда",
-        "description": "Время приготовления таких блюд не более 1 час"
-    },
-    {
-        "link": "/children-menu/",
-        "icon": "images/icon/cook.svg",
-        "iconAlt": "Иконка для детского меню",
-        "iconWidth": 24,
-        "iconHeight": 24,
-        "title": "Детское",
-        "description": "Самые полезные блюда которые можно детям любого возраста"
-    },
-    {
-        "link": "/chief-menu/",
-        "icon": "images/icon/chef.svg",
-        "iconAlt": "Иконка для блюд от шеф-поваров",
-        "iconWidth": 24,
-        "iconHeight": 23,
-        "title": "От шеф-поваров",
-        "description": "Требуют умения, времени и терпения, зато как в ресторане"
-    },
-    {
-        "link": "/holiday-menu/",
-        "icon": "images/icon/fire.svg",
-        "iconAlt": "Иконка для блюд на праздник",
-        "iconWidth": 24,
-        "iconHeight": 23,
-        "title": "На праздник",
-        "description": "Чем удивить гостей, чтобы все были сыты за праздничным столом"
-    }
+    "image": "img/manager.jpg",
+    "iconAit": "Вакансия 1",
+    "imgWidth": 387,
+    "iconHeight": 236,
+    "title": "Требуется менеджер",
+    "description": "Заработная плата от 45 000 тыс.руб"
+   },
+   {
+    "image": "img/accountant.jpg",
+    "iconAit": "Вакансия 2",
+    "imgWidth": 387,
+    "iconHeight": 236,
+    "title": "Требуется бухгалтер",
+    "description": "Заработная плата от 40 000 тыс.руб"
+   }
 ]

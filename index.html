@@ -222,20 +222,26 @@
      </section>
      <section class="section price">
          <h2 class="price__title section__title">Выберите нужный пакет</h2>
+         <div class="price__buttons"> 
+            <button class="price__btn" data-filter="all">все</button>
+                <button class="price__btn" data-filter="4 month">4 месяца</button>
+                <button class="price__btn" data-filter="6 month">6 месяцев</button>
+                <button class="price__btn" data-filter="1 month">1 месяц</button>
+         </div>             
          <ul class="price__list">
-            <!-- <li class="price__item">
+            <!-- <li class="price__item 4 month">
                  <p class="price__level">- PRO -</p>
                  <p class="price__price">8 900 р</p>
                  <p class="price__desription">4 месяца</p>
                  <button class="price__button button">Оставить заявку</button>
              </li>
-             <li class="price__item">
+             <li class="price__item 6 month">
                 <p class="price__level">- PRO -</p>
                 <p class="price__price">11 900 р</p>
                 <p class="price__desription">6 месяцев</p>
                 <button class="price__button button">Оставить заявку</button>
             </li>
-            <li class="price__item">
+            <li class="price__item 1 month">
                 <p class="price__level">- PRO -</p>
                 <p class="price__price">2 850 р</p>
                 <p class="price__desription">1 месяц</p>
@@ -249,12 +255,6 @@
             <!--Здесь будет создаваться код с использованием JSON. -->
         </ul>
      </section>
-     <section class="reviews">
-        <div class="reviews">
-                <h2 class="reviews__title">Оценки,отзывы</h2>
-                <img class="reviews__image" src="images/reviews.jpg" alt="Отзывы" width="200" height="300">
-        </div>
-    </section>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -268,7 +268,20 @@
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-      </div>
+    </div>
+     <section class="reviews">
+        <div class="reviews">
+             <h2 class="reviews__title">Оценки,отзывы</h2>
+            <img class="reviews__image" src="images/reviews.jpg" alt="Отзывы" width="200" height="300">
+        </div>
+     </section>
+    <section class="job">
+        <h2 class="job__title section__title">Вакансии</h2>
+        <ul class="job__list">
+            <!--здесь будет выводиться список вакансиями с использованием JSON.-->
+        </ul>
+        </h2>
+    </section>
     <footer class="footer">
         <div class="footer__container container">
             <a class="footer__logo logo">Fitness</a>
@@ -320,9 +333,10 @@
 
     </div>
 
-
-    <script src="scripts/script.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+ 
 </body>
 
 </html>
