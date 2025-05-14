@@ -204,11 +204,11 @@ if (headerMenu){
                 link: '#',
                 title: 'Тренеры',
             },
-            link3: {
+            link4: {
                 link: '#',
                 title: 'Прайс',
             },
-            link3: {
+            link5: {
                 link: '#',
                 title: 'Контакты',
             }
@@ -334,7 +334,7 @@ if (preloader && content) {
     }, 3000); // Задержка 3 секунды
 }
 
-var swiper = new swiper(".mySwiper", {
+var swiper = new swiper(".myswiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -345,7 +345,7 @@ var swiper = new swiper(".mySwiper", {
 const sliders = document.querySelector('.swiper');
 //проверяем существует ли элемент
     if (sliders) {
-        const swiper1 = new Swiper(sliders, {
+        const swiper1 = new swiper(sliders, {
             // Пагинация
             pagination: {
                 el: '.swiper-pagination',

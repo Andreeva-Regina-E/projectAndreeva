@@ -186,6 +186,7 @@
     width: 1350px;
     margin-top: 60px;
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     overflow: hidden;
 }
