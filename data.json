@@ -1,16 +1,16 @@
 [
    {
     "image": "img/manager.jpg",
-    "iconAit": "Вакансия 1",
-    "imgWidth": 387,
+    "iconAlt": "Вакансия 1",
+    "iconWidth": 387,
     "iconHeight": 236,
     "title": "Требуется менеджер",
     "description": "Заработная плата от 45 000 тыс.руб"
    },
    {
     "image": "img/accountant.jpg",
-    "iconAit": "Вакансия 2",
-    "imgWidth": 387,
+    "iconAlt": "Вакансия 2",
+    "iconWidth": 387,
     "iconHeight": 236,
     "title": "Требуется бухгалтер",
     "description": "Заработная плата от 40 000 тыс.руб"

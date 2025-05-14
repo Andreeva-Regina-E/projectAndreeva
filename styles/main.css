@@ -74,6 +74,9 @@
     text-decoration: none;
     text-align: center;
 }
+.coaches__link:hover{
+    background-color: #fdb100;
+}
 
 .coaches__list {
     margin: 0;
