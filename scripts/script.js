@@ -376,7 +376,7 @@ if (formApplication) {
         const email = formApplication.querySelector("#email").value;
 
         // Объявляем переменную modalMessage и помещаем в нее элемент для отображения сообщений о статусе заявки
-        const modalMessage = modalApplicationApplication.querySelector("#application-message");
+        const modalMessage = modalApplication.querySelector("#application-message");
 
         // Проверка длины имени пользователя
         if (username.length < 3) {
