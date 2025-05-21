@@ -11,3 +11,4 @@
 /* Подключение стилей относящихся к main */
 @import "main.css";
 @import "madia.css";
+@import "preloader.css";

@@ -319,6 +319,8 @@ if (cardsImages) {
 const preloader = document.querySelector(".preloader");
 //Объявляем переменную content и сохраняем в нее блок с классом .content
 const content = document.querySelector(".content");
+const bodyTag = document.querySelector('body');
+bodyTag.style.backgroundColor = "#FFFFFF";
 
 //проверяем существуют ли эти блоки
 if (preloader && content) {
@@ -330,6 +332,7 @@ if (preloader && content) {
 
         // и показываем контент
         content.style.display = "block";
+        bodyTag.style.backgroundColor = "#fff4c4";
 
         // Удаляем элемент предзагрузчика со страницы
         preloader.remove();
