@@ -288,16 +288,19 @@
 }
 .application__title {
     font-size: 36px; /*размер шрифта для заголовков*/
+     color: #fdec00; 
 }
 .application__text {
     margin-top: 20px; /* Отступ сверху */
     font-size: 20px; /*размер шрифта для текста*/
+    color: #fdec00; /*цвет текста*/
+
 }
 .application__form {
     width: 500px; /*устанавливаем ширину для формы*/
     display: flex; /*Используем flexbox для выравнивания формы в строку*/
     flex-direction: column;
-    row-gap: 10px; /* отступы между строками */
+    row-gap: 20px; /* отступы между строками */
 }
 
 .application__close {
@@ -459,3 +462,30 @@
 }
 
 
+.welcome {
+    background-color: #141024; /*фон секции*/
+    display: flex; /*Используем flexbox для выравнивания*/
+    justify-content: start; /*распределяем элементы сначала*/ 
+    gap: 28px; /* отступы между элементами */
+}
+
+.welcome__block {
+    margin-top: 252px; /*отступ сверху*/
+    margin-bottom: 411px; /*отступ снизу*/
+    width: 100%;/* Ширина 100% от родительского элемента */
+    max-width: 516px; /*задается максимальная ширина блока*/
+}
+
+.welcome__title {
+    font-weight: 600; /* толщина шрифта.*/
+    font-size: 70px; /*размер шрифта для заголовка*/
+    line-height: 160%;/*межстрочный интервал*/
+    color: #fff; /*цвет заголовка*/
+}
+
+.welcome__text {
+    margin-top: 20px; /*отступ сверху*/
+    font-size: 20px; /*размер шрифта для текста*/
+    font-weight: 400; /* толщина шрифта.*/
+    color: #fff; /*цвет текста*/
+}
