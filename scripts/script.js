@@ -250,10 +250,11 @@ if (cardsImages) {
         // создается переменная image, которая содержит HTML-код для карточки изображения. Внутри <li> (элемента списка) создаются два элемента <img>:
         // 1) Первое изображение (imageUrl[0]) отображается по умолчанию.
         //2) Второе изображение (imageUrl[1]) скрыто изначально с помощью стиля style="display: none;". Это изображение будет показано при клике.
+        //
         const image = `
          <li class="images__item">
-             <img class="images__picture" src="${imagesUrl[0]}" alt="${imagesAlt}" width="${imagesWidth}">
-             <img class="images__picture" src="${imagesUrl[1]}" alt="${imagesAlt}" width="${imagesWidth}" style="display: none;">
+             <img class="images__picture" src="${imageUrl[0]}" alt="${imageAlt}" width="${imageWidth}">
+             <img class="images__picture" src="${imageUrl[1]}" alt="${imageAlt}" width="${imageWidth}" style="display: none;">
          </li>
      `;
         //возвращает строку image, которая содержит HTML-код для карточки изображения
@@ -272,10 +273,11 @@ if (cardsImages) {
             images.forEach((item) => {
                 // создается переменная cardElement, где для каждого элемента массива вызывается функция createCard и передаются параметры
                 const cardElement = createCard(
-                    item.imagesUrl,
-                    item.imagesAlt,
-                    item.imagesWidth
+                    item.imgUrl,
+                    item.imgAlt,
+                    item.imgWidth
                 );
+                console.log(item);
                 // Добавление карточки на страницу в список cardListImages  с помощью метода insertAdjacentHTML beforeend указывает, что карточка должна быть добавлена в конец списка
                 cardListImages.insertAdjacentHTML("beforeend", cardElement);
             });
