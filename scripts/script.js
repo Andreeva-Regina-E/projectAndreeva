@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // *        3.3.2. Нет: продолжаем.
     // * 4. Конец
 
-    const LOGImg = document.querySelector(".LOG__img");
-    LOGImg.addEventListener('mouseenter', () => {
-        console.log('Мышка наведена на изображение, показываем текст');
-    });
+    // const LOGImg = document.querySelector(".LOG__img");
+    // LOGImg.addEventListener('mouseenter', () => {
+    //     console.log('Мышка наведена на изображение, показываем текст');
+    // });
 
 });
 
@@ -252,8 +252,8 @@ if (cardsImages) {
         //2) Второе изображение (imageUrl[1]) скрыто изначально с помощью стиля style="display: none;". Это изображение будет показано при клике.
         const image = `
          <li class="images__item">
-             <img class="images__picture" src="${imageUrl[0]}" alt="${imageAlt}" width="${imageWidth}">
-             <img class="images__picture" src="${imageUrl[1]}" alt="${imageAlt}" width="${imageWidth}" style="display: none;">
+             <img class="images__picture" src="${imagesUrl[0]}" alt="${imagesAlt}" width="${imagesWidth}">
+             <img class="images__picture" src="${imagesUrl[1]}" alt="${imagesAlt}" width="${imagesWidth}" style="display: none;">
          </li>
      `;
         //возвращает строку image, которая содержит HTML-код для карточки изображения
@@ -272,9 +272,9 @@ if (cardsImages) {
             images.forEach((item) => {
                 // создается переменная cardElement, где для каждого элемента массива вызывается функция createCard и передаются параметры
                 const cardElement = createCard(
-                    item.imageUrl,
-                    item.imageAlt,
-                    item.imageWidth
+                    item.imagesUrl,
+                    item.imagesAlt,
+                    item.imagesWidth
                 );
                 // Добавление карточки на страницу в список cardListImages  с помощью метода insertAdjacentHTML beforeend указывает, что карточка должна быть добавлена в конец списка
                 cardListImages.insertAdjacentHTML("beforeend", cardElement);
@@ -444,7 +444,7 @@ if (cardsCon) {
             console.log(data); // Вывод данных в консоль
             console.log(typeof data); // Вывод в консоль Типа полученных данных
 
-            images.forEach((item) => {
+            data.forEach((item) => {
                 // создается переменная cardElement, где для каждого элемента массива вызывается функция createCard и передаются параметры
                 const cardElement = createCard(
                     item.image,

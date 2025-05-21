@@ -1,6 +1,6 @@
 [
    {
-    "image": "img/manager.jpg",
+    "image": "images/manager.jpg",
     "iconAlt": "Вакансия 1",
     "iconWidth": 387,
     "iconHeight": 236,
@@ -8,7 +8,7 @@
     "description": "Заработная плата от 45 000 тыс.руб"
    },
    {
-    "image": "img/accountant.jpg",
+    "image": "images/accountant.jpg",
     "iconAlt": "Вакансия 2",
     "iconWidth": 387,
     "iconHeight": 236,
